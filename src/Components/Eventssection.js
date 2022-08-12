@@ -5,7 +5,7 @@ const Eventssection = () => {
     <div className="flex flex-col min-h-[90vh] max-h-[90vh] max-w-[90%] justify-evenly items-center m-auto px-1 py-1 ">
       <div className="container flex flex-col basis-1/2 px-5 items-left">
         <p className="text-6xl font-medium text-black  text-left">
-          Take a look at past <span className="font-semibold text-blue-500">our events</span>
+          Take a look at <span className="font-semibold text-blue-500">our events</span>
         </p>
       </div>
       <div className="container px-5 flex flex-row items-center justify-evenly">
