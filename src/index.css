@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.grid-bg {
+  background-image: linear-gradient(
+      rgba(71, 75, 255, 0.05) 2px,
+      transparent 2px
+    ),
+    linear-gradient(to right, rgba(71, 75, 255, 0.05) 2px, transparent 2px);
+  background-size: 100px 100px;
+  background-color: #ffffff;
+}
