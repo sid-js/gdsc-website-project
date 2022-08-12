@@ -10,7 +10,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="flex flex-row max-w-full min-h-[700px] max-h-[750] grid-bg">
+    <div className="flex flex-row max-w-full min-h-[90vh] max-h-[90vh] grid-bg">
       <div
         id="main"
         className="container min-h-full flex flex-col  px-12 py-20 text-sans items-start basis-8/12 justify-center"
