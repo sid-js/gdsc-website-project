@@ -33,11 +33,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 md:flex bg-white drop-shadow-md h-24 justify-between items-center align-middle py-5 md:px-5  w-full  text-lg text-gray-800">
+    <nav className="sticky top-0 z-50 md:flex bg-white drop-shadow-md h-24 justify-between items-center align-middle py-3 md:px-5  w-full  text-lg text-gray-800">
       <div className="flex justify-between align-center items-center px-6 py-4">
         <img
-          src="/gdsc-logo.svg"
-          className="w-[280px] sm:w-[390px] md:w-[480px]"
+          src="/gdsc-mvj-logo.svg"
+          className="w-[180px] sm:w-[200px] md:w-[280px]"
           alt="GDSC"
         />
         <button
