@@ -1,5 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import Fade from "react-reveal/Fade";
 
 const Hero = () => {
   const heros = [
@@ -10,13 +11,14 @@ const Hero = () => {
   ];
 
   return (
-    <div className="flex flex-row max-w-full min-h-[90vh] max-h-[90vh] grid-bg">
+    <div className="flex flex-col-reverse md:flex-row px-4 mx-1 w-full min-h-screen grid-bg justify-center items-center">
       <div
         id="main"
-        className="container min-h-full flex flex-col  px-12 py-20 text-sans items-start basis-8/12 justify-center"
+        className="md:container min-h-full w-fit flex flex-col  px-1 md:px-12 py-4 text-sans items-center md:items-start basis-8/12 justify-center"
       >
-        <p className="text-6xl font-medium text-black  text-left">
-          We are
+        <p className="text-3xl md:text-6xl font-medium text-black text-center md:text-left">We are<br className="sm:hidden"/></p>
+        <p className="text-3xl md:text-6xl font-medium text-black text-center md:text-left">
+          
           <TypeAnimation
             sequence={[
               " empowering student pioneers",
@@ -35,14 +37,18 @@ const Hero = () => {
             className="text-blue-500 font-semibold"
           />
         </p>
-        <p className="text-3xl font-normal text-left py-10 text-gray-600">
-            Join a community of student developers and grow your knowledge and skills in development and solve new challenges.
+        <p className="md:text-3xl text-md font-normal text-center py-10 text-gray-600 md:text-left">
+          Join a community of student developers and grow your knowledge and
+          skills in development and solve new challenges.
         </p>
       </div>
       <div
         id="right"
-        className="container min-h-full flex px-6 py-5 text-sans basis-4/12">
-        <img src="/hero-bg.svg" width="100%"/>
+        className=" sm:h-fit px-6 py-5 text-sans basis-4/12"
+      >
+        <Fade right>
+          <img src="/hero-bg.svg" className="sm:w-full w-[220px]" />
+        </Fade>
       </div>
     </div>
   );

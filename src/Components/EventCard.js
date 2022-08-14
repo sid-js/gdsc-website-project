@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade"
 
 const EventCard = (props) => {
   return (
-    <div className="container rounded-lg bg-white drop-shadow-2xl flex flex-col max-w-screen-sm mx-5 transition ease-in-out  hover:-translate-y-1 hover:scale-110">
+    
+    <div className="container rounded-xl bg-white drop-shadow-2xl flex flex-col max-w-screen-sm mx-5 transition ease-in-out  hover:-translate-y-1 hover:scale-110">
       <div className="container rounded-t-lg max-w-full overflow-hidden">
         <img
           src={props.imgsrc}
@@ -12,11 +14,12 @@ const EventCard = (props) => {
       </div>
       <div className="py-6 px-5">
         <a target="_blank" href={props.golink}>
-          <div className="text-3xl py-1  font-semibold hover:text-blue-600">{props.text}</div>
+          <div className="text-xl md:text-3xl py-1  font-semibold hover:text-blue-600">{props.text}</div>
         </a>
-        <div className="text-xl py-1  font-normal">{props.subtext}</div>
+        <div className="text-md md:text-xl py-1  font-normal">{props.subtext}</div>
       </div>
     </div>
+    
   );
 };
 
