@@ -2,7 +2,7 @@
 ![Logo](https://raw.githubusercontent.com/sid-js/gdsc-website-project/e4e15471b644c932e6fe7e42ccad7cfd47947c1f/public/gdsc-mvj-logo.svg)
 
 
-# [GDSC MVJCE Website Project]("https://gdsc-website-project.vercel.app/")
+# [GDSC MVJCE Website Project](https://gdsc-website-project.vercel.app/)
 
 A React website built for GDSC MVJCE Selection Project featuring info about GDSC and its activities.
 
@@ -14,7 +14,7 @@ A React website built for GDSC MVJCE Selection Project featuring info about GDSC
 
 ## Preview
 
-The website is currently deployed on Vercel. [Click here to Preview Website]("https://gdsc-website-project.vercel.app/")
+The website is currently deployed on Vercel. [Click here to Preview Website](https://gdsc-website-project.vercel.app/)
 
 ## Features
 - Fully Responsive Website (on Mobile,PC Screens)
