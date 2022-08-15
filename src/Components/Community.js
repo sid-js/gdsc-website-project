@@ -102,7 +102,7 @@ const Community = () => {
         </Modal.Body>
       </Modal>
 
-      <div className="flex-row flex max-w-full md:max-w-[95%] justify-center py-7 items-start gap-x-10">
+      <div className="flex-row flex max-w-full md:max-w-[100%] justify-evenly py-7 items-start gap-x-10">
         <div className="w-full drop-shadow-md" >
             <img src="/community-banner.png" alt="banner" className="rounded-lg"/>
         </div>
