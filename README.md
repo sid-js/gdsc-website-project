@@ -10,8 +10,8 @@ A React website built for GDSC MVJCE Selection Project featuring info about GDSC
 ## Preview
 
 The website is currently deployed on Vercel.
+**[Click here to Preview Website]("https://gdsc-website-project.vercel.app/")** <br>
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) 
-**[Click here to Preview Website]("https://gdsc-website-project.vercel.app/")**
 
 ## Features
 - Fully Responsive Website (on Mobile,PC Screens)
