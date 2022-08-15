@@ -32,11 +32,6 @@ const Navbar = () => {
       text: "Community",
       path: "/community",
     },
-    {
-      key: 4,
-      text: "Contact",
-      path: "/",
-    },
   ];
 
   return (
