@@ -1,17 +1,33 @@
-import {Routes,Route,Link} from "react-router-dom";
-import {Home,Login,Navbar,Teams} from "./Components/index";
+import { Routes, Route, Link } from "react-router-dom";
+import {
+  Home,
+  Login,
+  Navbar,
+  Teams,
+  Footer,
+  Community,
+} from "./Components/index";
+import { AuthContextProvider } from "./Auth/AuthContext";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <>
-    <Navbar/>
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/teams" element={<Teams/>}/>
-      <Route path="/auth/login" element={<Login/>}/>
-    </Routes>
+        <ToastContainer
+        position="top-center"
+        />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/teams" element={<Teams />} />
+          <Route path="/auth/login" element={<Login />} />
+          <Route path="/community" element={<Community />} />
+        </Routes>
+        <Footer />
+        
+
     </>
-    
   );
 }
 

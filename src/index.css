@@ -2,6 +2,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-height: 100%;
 }
 .grid-bg {
   background-image: linear-gradient(
