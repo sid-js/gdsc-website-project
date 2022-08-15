@@ -18,7 +18,7 @@ const PostCard = (props) => {
   const postAgo = timeAgo.format(props.post.createdAt, "twitter");
 
   return (
-    <div className="flex flex-col rounded-lg bg-white drop-shadow-lg px-5 py-5 w-[350px] md:w-[600px]">
+    <div className="flex flex-col rounded-lg bg-white drop-shadow-lg px-5 py-5 w-[350px] md:w-[600px] hover:-translate-y-2 hover:scale-110 duration-200 hover:drop-shadow-2xl">
       <div
         id="post-meta"
         className="flex flex-row justify-between items-center"
@@ -45,7 +45,7 @@ const PostCard = (props) => {
           {props.user ? (
             props.user.uid == props.post.author.uid ? (
               <div className="hover:-translate-y-3 hover:scale-125 duration-500 cursor-pointer">
-                <AiOutlineDelete
+                <AiOutlineDelete className="hover:text-red-500"
                   onClick={() => {
                     props.setDel(props.post.id);
                   }}

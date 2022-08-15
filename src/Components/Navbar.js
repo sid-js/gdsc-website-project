@@ -37,11 +37,14 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 md:flex bg-white drop-shadow-md h-24 justify-between items-center align-middle py-3 md:px-5  w-full  text-lg">
       <div className="flex justify-between align-center items-center px-6 py-4">
+        <Link to="/" >
         <img
           src="/gdsc-mvj-logo.svg"
-          className="w-[180px] sm:w-[200px] md:w-[280px]"
+          className="w-[180px] sm:w-[200px] md:w-[280px] hover:-translate-y-1 hover:scale-110 duration-200 hover:drop-shadow-md"
           alt="GDSC"
         />
+        </Link>
+        
         <button onClick={handleNav} className="md:hidden">
           {!isNav ? <FaStream className="" /> : <CgClose />}
         </button>
@@ -55,7 +58,7 @@ const Navbar = () => {
           {links.map((link) => (
             <li
               key={link.key}
-              className={`sm:px-3 md:px-5 py-2 ${
+              className={`sm:px-3 md:px-5 py-2 hover:text-blue-400 ${
                 pathname === link.path
                   ? "text-blue-500 border-blue-500 border-b"
                   : "text-gray-800"
@@ -67,7 +70,7 @@ const Navbar = () => {
         </ul>
         {user ? (
           <div className="md:flex md:flex-row items-center justify-center flex-none px-5">
-            <button onClick={handleSignOut}>Sign Out</button>
+            <button className="hover:text-red-600 hover:font-semibold" onClick={handleSignOut}>Sign Out</button>
             <div className="rounded-full overflow-hidden h-full px-3">
               <img src={user.photoURL} alt="avatar" width="40" height="40" className="rounded-full" />
             </div>

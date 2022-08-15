@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { Modal, Button } from "react-daisyui";
 import { TextField, LinearProgress } from "@mui/material";
 import { IoCreateOutline } from "react-icons/io5";
+import {TbRefresh} from "react-icons/tb";
 import { toast } from "react-toastify";
 import FadingLoader from "./FadingLoader";
 import ProfileLoader from "./ProfileLoader";
@@ -101,22 +102,29 @@ const Community = () => {
         </Modal.Body>
       </Modal>
 
-      <div className="flex-row flex max-w-full md:max-w-[70%] justify-center py-7 items-start gap-x-10">
+      <div className="flex-row flex max-w-full md:max-w-[95%] justify-center py-7 items-start gap-x-10">
+        <div className="w-full drop-shadow-md" >
+            <img src="/community-banner.png" alt="banner" className="rounded-lg"/>
+        </div>
         <div
           id="main-layout"
           className="flex flex-col justify-center w-[350px] md:w-[600px] items-center"
         >
           <div className="flex flex-row justify-between items-center w-full py-3 text-2xl border-b-slate-200 border-b gap-4">
             <p>Community Posts</p>
-            <button
+            <div className="flex flex-row gap-x-4 items-center">
+                <TbRefresh onClick={fetchfirst} className="cursor-pointer hover:text-blue-400"/>
+                <button
               onClick={() => {
                 setmodalOpen(true);
               }}
-              className="drop-shadow-md bg-blue-500 rounded-lg px-3 py-1 text-white text-lg"
+              className="drop-shadow-md bg-blue-500 rounded-lg px-3 py-1 text-white text-lg hover:bg-blue-400 hover:scale-110 duration-200 hover:drop-shadow-2xl"
             >
               {" "}
               + Create New
             </button>
+            </div>
+            
             <Modal
               className=""
               open={modalOpen}
