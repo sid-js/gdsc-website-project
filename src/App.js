@@ -10,7 +10,7 @@ import {
 import { AuthContextProvider } from "./Auth/AuthContext";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+// Main
 function App() {
   return (
     <>
